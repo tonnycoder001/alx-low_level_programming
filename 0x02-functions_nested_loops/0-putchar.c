@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
- * main - print _putchar
- * is writtern by esere cynthia
- * Return: Always 0 (Success)
- */
+  * main - entry point to program
+  *
+  * Return: On success 0
+  */
 int main(void)
 {
-char *sh = "_putchar";
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
-_putchar('\n');
-return (0);
+	char mychar[] = "_putchar";
+	int n;
+
+	for (n = 0; n <= 7; n++)
+	{
+		_putchar(mychar[n]);
+	}
+	_putchar('\n');
+	return (0);
 }
